@@ -26,6 +26,10 @@ public class Photo implements Serializable {
         this.mImage = mImage;
     }
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
     public String getTitle() {
         return mTitle;
     }
