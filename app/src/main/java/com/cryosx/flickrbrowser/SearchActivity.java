@@ -33,7 +33,7 @@ public class SearchActivity extends BaseActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-                sharedPreferences.edit().putString(FLICKR_QUERY, query);
+                sharedPreferences.edit().putString(FLICKR_QUERY, query).commit();
                 mSearchView.clearFocus();
                 finish();
                 return true;

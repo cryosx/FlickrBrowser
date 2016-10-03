@@ -13,4 +13,8 @@
     tools:context="com.cryosx.flickrbrowser.SearchActivity"
     tools:showIn="@layout/layout_search">
 
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/toolbar" />
+
 </RelativeLayout>
